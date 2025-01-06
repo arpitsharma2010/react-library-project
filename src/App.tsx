@@ -1,10 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Navbar } from "./Layouts/NavbarAndFooter/Navbar";
+import { Footer } from "./Layouts/NavbarAndFooter/Footer";
+import { HomePage } from "./Layouts/Homepage/HomePage";
 
-function App() {
+export const App = () => {
   return (
-    <h1>Welcome</h1>
+    <>
+      <Navbar />
+      <HomePage/>
+      <Footer/>
+    </>
   );
 }
-
-export default App;
